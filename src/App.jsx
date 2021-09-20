@@ -1,13 +1,12 @@
+//Files
 import './App.scss';
-import Navbar from './Components/Navbar/Navbar';
-import Sidebar from './Components/Sidebar/Sidebar';
+import AuthenticatedApp from './AuthenticatedApp';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <Navbar/>
-        <Sidebar/>
+        <AuthenticatedApp />
       </div>
     </div>
   );

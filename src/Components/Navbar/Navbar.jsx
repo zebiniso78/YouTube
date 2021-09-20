@@ -1,6 +1,5 @@
 //Files
 import "./Navbar.scss";
-import { NavLink } from "react-router-dom";
 
 //Icons
 import Menu from "../Lib/Svg/Navbar_Svg/Menu";

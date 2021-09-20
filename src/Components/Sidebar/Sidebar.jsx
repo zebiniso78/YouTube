@@ -1,5 +1,6 @@
 //Files
 import "./Sidebar.scss";
+import { NavLink, Switch, Route } from "react-router-dom";
 
 //Icons
 import Home from "../Lib/Svg/Sidebar_Svg/Home";
@@ -14,6 +15,7 @@ import LikedVideos from "../Lib/Svg/Sidebar_Svg/LikedVideos";
 import Music from "../Lib/Svg/Sidebar_Svg/Music";
 import Games from "../Lib/Svg/Sidebar_Svg/Games";
 import ShowMore from "../Lib/Svg/Sidebar_Svg/ShowMore";
+import Settings from "../Lib/Svg/Sidebar_Svg/Settings";
 
 //Images
 import Subscribe1 from "../../Assets/Images/Sidebar_Img/subscribe1.png";
@@ -23,15 +25,20 @@ import Subscribe4 from "../../Assets/Images/Sidebar_Img/subscribe4.png";
 import Subscribe5 from "../../Assets/Images/Sidebar_Img/subscribe5.png";
 import Subscribe6 from "../../Assets/Images/Sidebar_Img/subscribe6.png";
 
+//Pages
+import HomePage from '../../Pages/Home/Home';
+import Channel from '../../Pages/Channel/Channel';
+
 function Sidebar() {
   return (
+    <>
     <nav className="sidebar">
       <ul className="sidebar__list-pages">
         <li className="sidebar__item-pages">
-          <a href="#link" className="sidebar__link-pages">
-            <Home />
-            <p className="sidebar__paragraph-pages">Home</p>
-          </a>
+            <a href="#link" className="sidebar__link-pages">
+              <Home />
+              <p className="sidebar__paragraph-pages">Home</p>
+            </a>
         </li>
         <li className="sidebar__item-pages">
           <a href="#link" className="sidebar__link-pages">
@@ -102,62 +109,83 @@ function Sidebar() {
         <h2 className="subscriptions__heading">Subscriptions</h2>
         <ul className="sidebar__list-subscriptions">
           <li className="sidebar__item-subscriptions">
-            <a href="#link" className="sidebar__link-subscriptions">
+          <a href="#link" className="sidebar__link-subscriptions">
               <img
-              className="sidebar__img-subscriptions"
-              src={Subscribe1} 
-              alt="Avatar" />
-              <p className="sidebar__paragraph-subscriptions">Gussie Singleton</p>
+                className="sidebar__img-subscriptions"
+                src={Subscribe1}
+                alt="Avatar"
+              />
+              <p className="sidebar__paragraph-subscriptions">
+                Gussie Singleton
+              </p>
             </a>
           </li>
           <li className="sidebar__item-subscriptions">
             <a href="#link" className="sidebar__link-subscriptions">
               <img
-              className="sidebar__img-subscriptions"
-              src={Subscribe2} 
-              alt="Avatar" />
+                className="sidebar__img-subscriptions"
+                src={Subscribe2}
+                alt="Avatar"
+              />
               <p className="sidebar__paragraph-subscriptions">Nora Francis</p>
             </a>
           </li>
           <li className="sidebar__item-subscriptions">
             <a href="#link" className="sidebar__link-subscriptions">
               <img
-              className="sidebar__img-subscriptions"
-              src={Subscribe3} 
-              alt="Avatar" />
+                className="sidebar__img-subscriptions"
+                src={Subscribe3}
+                alt="Avatar"
+              />
               <p className="sidebar__paragraph-subscriptions">Belle Briggs</p>
             </a>
           </li>
           <li className="sidebar__item-subscriptions">
             <a href="#link" className="sidebar__link-subscriptions">
               <img
-              className="sidebar__img-subscriptions"
-              src={Subscribe4} 
-              alt="Avatar" />
+                className="sidebar__img-subscriptions"
+                src={Subscribe4}
+                alt="Avatar"
+              />
               <p className="sidebar__paragraph-subscriptions">Eunice Cortez</p>
             </a>
           </li>
           <li className="sidebar__item-subscriptions">
             <a href="#link" className="sidebar__link-subscriptions">
               <img
-              className="sidebar__img-subscriptions"
-              src={Subscribe5} 
-              alt="Avatar" />
+                className="sidebar__img-subscriptions"
+                src={Subscribe5}
+                alt="Avatar"
+              />
               <p className="sidebar__paragraph-subscriptions">Emma Hanson</p>
             </a>
           </li>
           <li className="sidebar__item-subscriptions">
             <a href="#link" className="sidebar__link-subscriptions">
               <img
-              className="sidebar__img-subscriptions"
-              src={Subscribe6} 
-              alt="Avatar" />
+                className="sidebar__img-subscriptions"
+                src={Subscribe6}
+                alt="Avatar"
+              />
               <p className="sidebar__paragraph-subscriptions">Leah Berry</p>
             </a>
           </li>
         </ul>
+
+        <div className="sidebar__settings-wrapper">
+          <Settings />
+          <p className="settings-wrapper__paragraph">Settings</p>
+        </div>
       </div>
     </nav>
+
+{/*   
+      <Switch>
+        <Route path='/' component={HomePage} exact />
+        <Route path='/channel' component={Channel} exact />
+      </Switch> 
+   */}
+    </>
   );
 }
 
