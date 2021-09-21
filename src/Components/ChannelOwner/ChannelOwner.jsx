@@ -1,4 +1,6 @@
+//Files
 import './ChannelOwner.scss';
+import { NavLink } from 'react-router-dom';
 
 //Icons
 import NotifButton from '../Lib/Svg/Navbar_Svg/Notif';
@@ -50,7 +52,7 @@ function ChannelOwner() {
                 <nav className="channel__navbar">
                     <ul className="channel__list">
                         <li className="channel__item">
-                            <a href="#link" className="channel__link">Home</a>
+                            <a href="#link" className="channel__link" active='true'>Home</a>
                         </li>
                         <li className="channel__item">
                             <a href="#link" className="channel__link">Videos</a>
@@ -73,10 +75,12 @@ function ChannelOwner() {
                     </ul>
                 </nav>
                 <div className="channel-video-info__wrapper">
+                    <NavLink to='/video'>
                     <img
                     className="small-video__img" 
                     src={SmallVideo} 
                     alt="Small Video"  />
+                    </NavLink>
                     <div className="video-info__wrapper">
                         <h3 className="video__heading">Choosing The Best Audio Player Software For Your Computer</h3>
                         <p className="video__paragraph">Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads. </p>

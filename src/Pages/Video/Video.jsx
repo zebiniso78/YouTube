@@ -1,12 +1,12 @@
 import React from "react";
-import "./VideoPlayer.scss";
+import "./Video.scss";
 
 //Components
 import Navbar from "../../Components/Navbar/Navbar";
 import SingleVideo from "../../Components/SingleVideo/SingleVideo";
 import SideVideos from "../../Components/SideVideos/SideVideos";
 
-function VideoPlayer() {
+function Video() {
   return (
     <>
       <nav className="video-player__navbar">
@@ -23,4 +23,4 @@ function VideoPlayer() {
   );
 }
 
-export default VideoPlayer;
+export default Video;

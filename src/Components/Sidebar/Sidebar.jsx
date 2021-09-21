@@ -32,7 +32,7 @@ function Sidebar() {
     <nav className="sidebar">
       <ul className="sidebar__list-pages">
         <li className="sidebar__item-pages">
-            <NavLink to='/' className="sidebar__link-pages">
+            <NavLink to='/' activeClassName='active' className="sidebar__link-pages">
               <Home />
               <p className="sidebar__paragraph-pages">Home</p>
             </NavLink>
@@ -138,14 +138,14 @@ function Sidebar() {
             </NavLink>
           </li>
           <li className="sidebar__item-subscriptions">
-            <a href="#link" className="sidebar__link-subscriptions">
+            <NavLink to='/channel' className="sidebar__link-subscriptions">
               <img
                 className="sidebar__img-subscriptions"
                 src={Subscribe4}
                 alt="Avatar"
               />
               <p className="sidebar__paragraph-subscriptions">Eunice Cortez</p>
-            </a>
+            </NavLink>
           </li>
           <li className="sidebar__item-subscriptions">
           <NavLink to='/channel' className="sidebar__link-subscriptions">

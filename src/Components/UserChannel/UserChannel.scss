@@ -124,3 +124,10 @@
   line-height: 16px;
   color: #c2c2c2;
 }
+
+
+@media only screen and (max-width: 1660px) {
+  .user-channel__item {
+    margin-right: 5px;
+  }
+}

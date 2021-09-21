@@ -97,3 +97,13 @@
   line-height: 20px;
   color: #c2c2c2;
 }
+
+.active p {
+  color: #ff0000;
+}
+
+.active svg path {
+  fill: #ff0000;
+  opacity: 1;
+}
+

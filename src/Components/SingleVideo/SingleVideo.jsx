@@ -20,9 +20,9 @@ function SingleVideo() {
             src="https://www.youtube.com/embed/ItoTvKPhgFk"
             title="YouTube video player"
             height="600"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
           <div className="play-video__info-wrapper">
             <div>

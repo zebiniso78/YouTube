@@ -1,6 +1,7 @@
 //Files
 import React from 'react';
 import './ChannelOwnerVideos.scss';
+import { NavLink } from 'react-router-dom';
 
 //Icons
 import Prev from '../Lib/Svg/PrevNext_Svg/Prev';
@@ -9,8 +10,6 @@ import Next from '../Lib/Svg/PrevNext_Svg/Next';
 function ChannelOwnerVideos() {
 
     const [video, setVideo] = React.useState([]);
-    const [photoId, setPhotoId] = React.useState();
-	const [isNextDisabled, setIsNextDisabled] = React.useState(false);
 
 
     React.useEffect(() => {
@@ -19,18 +18,7 @@ function ChannelOwnerVideos() {
             const neededPhotos= data.slice(0, 5)
             setVideo(neededPhotos);
         });
-
-        fetch('https://jsonplaceholder.typicode.com/photos/' +(photoId+1))
-        .then((response) => response.json()).then((data) => {
-
-            if(data.length && data.id<11) {
-                setIsNextDisabled(false);
-            }
-            else {
-                setIsNextDisabled(true);
-            }
-        });
-    }, [photoId]);
+    }, []);
 
     return <> 
 
@@ -41,15 +29,11 @@ function ChannelOwnerVideos() {
 
         <div className="buttons-wrapper">
             <button 
-            className="button-prev"
-            onClick={() => setPhotoId(photoId - 1)}
-			disabled={photoId < 11 ? true : false}>
+            className="button-prev">
                 <Prev />
             </button>
             <button 
-            className="button-next"
-            onClick={() => setPhotoId(photoId + 1)} 
-            disabled={isNextDisabled}>
+            className="button-next">
                 <Next />
             </button>
         </div>
@@ -60,12 +44,14 @@ function ChannelOwnerVideos() {
         video.map((photo) => (
             <li className="owner-videos__item" key={photo.id}>
                 <div className="item__image-wrapper">
+                    <NavLink to='/video'>
                     <img
                     className="item__image" 
                     src={photo.thumbnailUrl} 
                     alt="Video"
                     width='250'
                     height='150'  />
+                    </NavLink>
 
                     <div className="item__image-time-wrapper">
                         <p className="item__image-time">{photo.id}:{photo.albumId}0</p>

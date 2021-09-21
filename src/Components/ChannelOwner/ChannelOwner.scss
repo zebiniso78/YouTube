@@ -120,6 +120,12 @@
     color: #ff0000;
     text-decoration: underline;
   }
+
+  &:active {
+    font-weight: bold;
+    color: #ff0000;
+    text-decoration: underline;
+  }
 }
 
 .channel-video-info__wrapper {

@@ -122,4 +122,15 @@
     color: #c2c2c2;
     margin-right: 10px;
   }
+
+  @media only screen and (max-width: 1660px) {
+    .recommendations__item {
+      margin-right: 6px;
+    }
+
+    .recommendations-item__image {
+      width: 400px;
+      height: 200px;
+    }
+  }
   
