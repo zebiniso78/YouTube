@@ -1,6 +1,6 @@
 //Files
 import "./Sidebar.scss";
-import { NavLink, Switch, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 //Icons
 import Home from "../Lib/Svg/Sidebar_Svg/Home";
@@ -25,9 +25,6 @@ import Subscribe4 from "../../Assets/Images/Sidebar_Img/subscribe4.png";
 import Subscribe5 from "../../Assets/Images/Sidebar_Img/subscribe5.png";
 import Subscribe6 from "../../Assets/Images/Sidebar_Img/subscribe6.png";
 
-//Pages
-import HomePage from '../../Pages/Home/Home';
-import Channel from '../../Pages/Channel/Channel';
 
 function Sidebar() {
   return (
@@ -35,10 +32,10 @@ function Sidebar() {
     <nav className="sidebar">
       <ul className="sidebar__list-pages">
         <li className="sidebar__item-pages">
-            <a href="#link" className="sidebar__link-pages">
+            <NavLink to='/' className="sidebar__link-pages">
               <Home />
               <p className="sidebar__paragraph-pages">Home</p>
-            </a>
+            </NavLink>
         </li>
         <li className="sidebar__item-pages">
           <a href="#link" className="sidebar__link-pages">
@@ -109,7 +106,7 @@ function Sidebar() {
         <h2 className="subscriptions__heading">Subscriptions</h2>
         <ul className="sidebar__list-subscriptions">
           <li className="sidebar__item-subscriptions">
-          <a href="#link" className="sidebar__link-subscriptions">
+          <NavLink to='/channel' className="sidebar__link-subscriptions">
               <img
                 className="sidebar__img-subscriptions"
                 src={Subscribe1}
@@ -118,27 +115,27 @@ function Sidebar() {
               <p className="sidebar__paragraph-subscriptions">
                 Gussie Singleton
               </p>
-            </a>
+            </NavLink>
           </li>
           <li className="sidebar__item-subscriptions">
-            <a href="#link" className="sidebar__link-subscriptions">
+            <NavLink to='/channel' className="sidebar__link-subscriptions">
               <img
                 className="sidebar__img-subscriptions"
                 src={Subscribe2}
                 alt="Avatar"
               />
               <p className="sidebar__paragraph-subscriptions">Nora Francis</p>
-            </a>
+            </NavLink>
           </li>
           <li className="sidebar__item-subscriptions">
-            <a href="#link" className="sidebar__link-subscriptions">
+            <NavLink to='/channel' className="sidebar__link-subscriptions">
               <img
                 className="sidebar__img-subscriptions"
                 src={Subscribe3}
                 alt="Avatar"
               />
               <p className="sidebar__paragraph-subscriptions">Belle Briggs</p>
-            </a>
+            </NavLink>
           </li>
           <li className="sidebar__item-subscriptions">
             <a href="#link" className="sidebar__link-subscriptions">
@@ -151,24 +148,24 @@ function Sidebar() {
             </a>
           </li>
           <li className="sidebar__item-subscriptions">
-            <a href="#link" className="sidebar__link-subscriptions">
+          <NavLink to='/channel' className="sidebar__link-subscriptions">
               <img
                 className="sidebar__img-subscriptions"
                 src={Subscribe5}
                 alt="Avatar"
               />
               <p className="sidebar__paragraph-subscriptions">Emma Hanson</p>
-            </a>
+            </NavLink>
           </li>
           <li className="sidebar__item-subscriptions">
-            <a href="#link" className="sidebar__link-subscriptions">
+          <NavLink to='/channel' className="sidebar__link-subscriptions">
               <img
                 className="sidebar__img-subscriptions"
                 src={Subscribe6}
                 alt="Avatar"
               />
               <p className="sidebar__paragraph-subscriptions">Leah Berry</p>
-            </a>
+            </NavLink>
           </li>
         </ul>
 
@@ -179,12 +176,8 @@ function Sidebar() {
       </div>
     </nav>
 
-{/*   
-      <Switch>
-        <Route path='/' component={HomePage} exact />
-        <Route path='/channel' component={Channel} exact />
-      </Switch> 
-   */}
+   
+
     </>
   );
 }

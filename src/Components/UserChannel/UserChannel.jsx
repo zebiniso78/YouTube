@@ -1,6 +1,7 @@
 //Files
 import React from 'react';
 import './UserChannel.scss';
+import { NavLink } from 'react-router-dom';
 
 //Icons
 import Prev from '../Lib/Svg/PrevNext_Svg/Prev';
@@ -47,7 +48,7 @@ function UserChannel() {
             className="user-channel__image" 
             src={ChannelOwner} 
             alt="Avatar of Channel Owner"  />
-            <h2 className="user-channel__heading">Dollie Blair</h2>
+            <NavLink to='/channel'><h2 className="user-channel__heading">Dollie Blair</h2></NavLink>
         </div>
 
         <div className="buttons-wrapper">

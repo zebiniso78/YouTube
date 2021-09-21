@@ -1,5 +1,6 @@
 //Files
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './FoodAndDrink.scss';
 
 //Icons
@@ -8,6 +9,7 @@ import Next from '../Lib/Svg/PrevNext_Svg/Next';
 
 //Images
 import ChannelPhoto from '../../Assets/Images/Channel_Img/FoodandDrink.jpg';
+
 
 function FoodAndDrink() {
 
@@ -42,7 +44,7 @@ function FoodAndDrink() {
             className="food__image" 
             src={ChannelPhoto} 
             alt="Avatar of Channel"  />
-            <h2 className="food__heading">Food & Drink</h2>
+            <NavLink to='/channel' > <h2 className="food__heading">Food & Drink</h2> </NavLink>
             <p className="food__paragraph">Recommended channel for you</p>
         </div>
 

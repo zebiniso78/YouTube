@@ -14,20 +14,22 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-            <div className="nav__logo-wrapper">
-            <button className="nav__menu-button" type="button">
-                <Menu />
-            </button>
-            <a href="#link" className="nav__logo-link">
-                <Logo />
-            </a>
+            <div className="navbar-box">
+                <div className="nav__logo-wrapper">
+                <button className="nav__menu-button" type="button">
+                    <Menu />
+                </button>
+                <a href="#link" className="nav__logo-link">
+                    <Logo />
+                </a>
+                </div>
+                <form className="nav__search-form">
+                    <input type="text"
+                    className="nav__search-input"
+                    placeholder="Search" />
+                    <Search />
+                </form>
             </div>
-            <form className="nav__search-form">
-                <input type="text"
-                className="nav__search-input"
-                placeholder="Search" />
-                <Search />
-            </form>
             <ul className="nav__list">
                 <li className="nav__item">
                     <button className="nav__icon-button">
