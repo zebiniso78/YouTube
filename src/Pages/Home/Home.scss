@@ -24,4 +24,29 @@
     .main__center-wrapper {
         margin-left: 0px;
       }
+
+  }
+
+  
+  @media only screen and (max-width: 340px) {
+    .home-main {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .main__center-wrapper {
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    .user-channel-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .item__image {
+        width: 20px !important;
+        margin-left: 50px;
+    }
+      
   }

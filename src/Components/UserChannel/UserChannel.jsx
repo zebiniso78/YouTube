@@ -26,7 +26,7 @@ function UserChannel() {
 
   return (
     <>
-      {loading && <p>Loading...</p>}
+      {loading && <p className='load'> Loading...  </p> }
 
       <div className="user-channel-wrapper">
         <div className="user-channel-heading__wrapper">
