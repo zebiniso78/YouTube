@@ -16,7 +16,7 @@ function Channel() {
 
       <main className="channel__main">
         <Sidebar />
-        <div className="main__center-wrapper">
+        <div className="channel__center-wrapper">
           <ChannelOwner />
           <ChannelOwnerVideos />
         </div>

@@ -171,9 +171,7 @@
     min-width: 200px;
   }
 
-  .nav__item {
-    margin-right: 5px;
-  }
+ 
 }
 
 @media only screen and (max-width: 570px) {
@@ -201,6 +199,17 @@
 @media only screen and (max-width: 400px) {
   .nav__menu-button {
     display: none;
+  }
+
+}
+
+@media only screen and (max-width: 340px) {
+  .nav__menu-button {
+    display: none;
+  }
+
+  .nav__item {
+    margin-right: 0;
   }
 
 }

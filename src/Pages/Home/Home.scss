@@ -1,9 +1,27 @@
 .home__main {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .main__center-wrapper {
-    margin-left: 60px;
+  margin-left: 60px;
 }
+
+@media only screen and (max-width: 1480px) {
+  .main__center-wrapper {
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+    .main__center-wrapper {
+      margin-left: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 530px) {
+    .main__center-wrapper {
+        margin-left: 0px;
+      }
+  }

@@ -22,7 +22,6 @@ function UserChannel() {
         setVideo(neededPhotos);
         setLoading(false);
       });
-
   }, []);
 
   return (
@@ -42,8 +41,7 @@ function UserChannel() {
         </div>
 
         <div className="buttons-wrapper">
-          <button
-            className="button-prev">
+          <button className="button-prev">
             <Prev />
           </button>
           <button className="button-next">
@@ -56,8 +54,8 @@ function UserChannel() {
         {video.length > 0 &&
           video.map((photo) => (
             <li className="user-channel__item" key={photo.id}>
-              <div className="item__image-wrapper">
-                <NavLink to="/video">
+              <NavLink to="/video/2">
+                <div className="item__image-wrapper">
                   <img
                     className="item__image"
                     src={photo.thumbnailUrl}
@@ -65,21 +63,23 @@ function UserChannel() {
                     width="250"
                     height="150"
                   />
-                </NavLink>
 
-                <div className="item__image-time-wrapper">
-                  <p className="item__image-time">
-                    {photo.id}:{photo.albumId}0
-                  </p>
+                  <div className="item__image-time-wrapper">
+                    <p className="item__image-time">
+                      {photo.id}:{photo.albumId}0
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <h3 className="item__image-heading">
-                {photo.title.slice(0, 30)}
-              </h3>
-              <div className="item__info-wrapper">
-                <span className="item__info-span">80k views · 3 days ago</span>
-                <span className="item__info-span">Dollie Blair</span>
-              </div>
+                <h3 className="item__image-heading">
+                  {photo.title.slice(0, 30)}
+                </h3>
+                <div className="item__info-wrapper">
+                  <span className="item__info-span">
+                    80k views · 3 days ago
+                  </span>
+                  <span className="item__info-span">Dollie Blair</span>
+                </div>
+              </NavLink>
             </li>
           ))}
       </ul>

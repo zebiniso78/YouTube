@@ -170,3 +170,59 @@
   font-weight: normal;
   font-size: 16px;
 }
+
+@media only screen and (max-width:1140px) {
+  .single-video__wrapper {
+    margin-right: 20px;
+  }
+
+  .play-video__iframe {
+    width: 100%;
+    box-sizing:border-box;
+  }
+
+  .play-video__paragraph {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width:960px) {
+  .play-video__paragraph {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width:910px) {
+  .play-video-channel__button {
+    display: none;
+  }
+
+  .play-video__iframe {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width:780px) {
+  .play-video__paragraph {
+    margin-bottom: 10px;
+  }
+
+  .play-video__heading {
+    font-size: 28px;
+  }
+
+  .play-video__list {
+    margin: 0;
+  }
+
+  .play-video__iframe {
+    height: 280px;
+    margin-bottom: 0px;
+  }
+
+  .single-video__wrapper {
+    width: 98%;
+    margin-bottom: 20px;
+  }
+}

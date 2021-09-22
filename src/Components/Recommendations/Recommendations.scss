@@ -42,7 +42,7 @@
     margin-bottom: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   
@@ -134,3 +134,114 @@
     }
   }
   
+  @media only screen and (max-width: 1480px) {
+    .recommendations__list {
+      justify-content: space-evenly;
+    }
+
+    .recommendations__item {
+      margin-bottom: 20px;
+    }
+
+    .recommendations-buttons-wrapper {
+      margin-right: 80px;
+    }
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .recommendations-item__image {
+      width: 320px;
+    }
+
+  }
+
+  @media only screen and (max-width: 720px) {
+    .recommendations-item__image {
+      width: 400px;
+      height: 200px;
+    }
+
+    .recommendations-item__image-heading {
+      text-align: left;
+      font-size: 18px;
+    }
+
+    .recommendations-buttons-wrapper {
+      display: none;
+    }
+
+    .recommendations__heading {
+      margin-left: 35px;
+    }
+
+  }
+
+  @media only screen and (max-width:640px) {
+    .recommendations__heading {
+      margin-left: 55px;
+    }
+
+    .recommendations-item__image-wrapper{
+      width: 90%;
+    
+    }
+  }
+
+  @media only screen and (max-width:580px) {
+    .recommendations__heading {
+      margin-left: 30px !important;
+    }
+  }
+
+  @media only screen and (max-width:540px) {
+    
+
+    .recommendations-item__image {
+      width: 380px !important;
+      height: 180px !important;
+    }
+
+    .recommendations-heading__wrapper {
+      margin-left: 15px !important;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {  
+
+    .recommendations-heading__wrapper {
+      margin-left: 5px !important;
+    }
+
+    .recommendations__heading {
+      margin-left: 10px !important;
+      text-align: left;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {  
+
+    .recommendations-item__image {
+      width: 300px !important;
+      height: 180px;
+    }
+
+    .recommendations__heading {
+      text-align: left;
+    }
+
+    .recommendations__list {
+      width: 75%;
+    }
+
+    .recommendations-heading__wrapper {
+      margin-left: -10px !important;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .recommendations__list {
+      width: 35% !important;
+      margin: 0 auto !important;
+    }
+  
+  }

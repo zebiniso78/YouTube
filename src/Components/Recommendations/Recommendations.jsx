@@ -39,8 +39,8 @@ function Recommendations() {
       <ul className="recommendations__list">
         {video.length > 0 &&
           video.map((photo) => (
-            <li className="recommendations__item" key={photo.id}>
-              <NavLink to={"/video"}>
+            <NavLink to={"/video/2"}>
+              <li className="recommendations__item" key={photo.id}>
                 <div className="recommendations-item__image-wrapper">
                   <img
                     className="recommendations-item__image"
@@ -56,19 +56,19 @@ function Recommendations() {
                     </p>
                   </div>
                 </div>
-              </NavLink>
-              <h3 className="recommendations-item__image-heading">
-                {photo.title.slice(0, 50)}
-              </h3>
-              <div className="recommendations-item__info-wrapper">
-                <span className="recommendations-item__info-span">
-                  80k views · 3 days ago
-                </span>
-                <span className="recommendations-item__info-span">
-                  Dollie Blair
-                </span>
-              </div>
-            </li>
+                <h3 className="recommendations-item__image-heading">
+                  {photo.title.slice(0, 40)}
+                </h3>
+                <div className="recommendations-item__info-wrapper">
+                  <span className="recommendations-item__info-span">
+                    80k views · 3 days ago
+                  </span>
+                  <span className="recommendations-item__info-span">
+                    Dollie Blair
+                  </span>
+                </div>
+              </li>
+            </NavLink>
           ))}
       </ul>
     </>

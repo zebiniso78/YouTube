@@ -2,3 +2,60 @@ div .video-player-main__center-wrapper {
     display: flex;
     align-items: flex-start;
 }
+
+@media only screen and (max-width:780px) {
+
+    .video-player-main__center-wrapper {
+        flex-direction: column;
+    }
+
+    .sidevideos__list {
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+
+   .play-video__paragraph {
+       display: none;
+   }
+
+   .play-video__heading {
+       margin-top: 10px;
+       font-size: 24px !important;
+   }
+
+   .play-video-info__wrapper {
+       display: none !important;
+   }
+
+   .play-video__button {
+       font-size: 16px !important;
+   }
+
+   .play-video__item {
+    padding: 3px 6px !important;
+   }
+
+   .single-video__wrapper {
+       margin: 0 !important;
+   }
+    
+}
+
+
+@media only screen and (max-width:400px) {
+
+    .play-video__heading {
+        margin-top: 10px;
+        font-size: 20px !important;
+    }    
+ }
+
+ @media only screen and (max-width:340px) {
+
+    .play-video__iframe {
+        height: 180px !important;
+    }  
+ }

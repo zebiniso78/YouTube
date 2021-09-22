@@ -209,7 +209,7 @@
 }
 
 .channel-owners__img {
-  margin-right: 24px;
+  margin-right: 12px;
 }
 
 .channel-owners__name {
@@ -221,3 +221,261 @@
   line-height: 23px;
   color: #19202c;
 }
+
+@media only screen and (max-width:1560px) {
+  .channel-owners__name {
+  font-size: 14px!important;  
+  }
+}
+
+@media only screen and (max-width:1350px) {
+  .channel-owners__img {
+  margin-right: 6px !important;  
+  }
+}
+
+@media only screen and (max-width:1290px) {
+  .video__heading , .video__paragraph {
+    margin-bottom: 5px !important
+  }
+
+  .video__paragraph {
+    font-size: 14px;
+  }
+
+  .video__heading {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width:1210px) {
+  .small-video__img {
+    width: 500px;
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width:1150px) {
+  .channel__center-right {
+    display: none;
+  }
+
+  .channel__center-left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:1060px) {
+ .single-video__img {
+   width: 94%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+ }
+
+ .channel__heading-wrapper {
+   width: 94%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+ }
+
+ .channel__center-left {
+   width: 94%;
+   margin: 0 auto;
+ }
+}
+
+@media only screen and (max-width:950px) {
+  .single-video__img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+ 
+  .channel__heading-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .channel__navbar {
+    width: 80% !important;
+  }
+
+  .small-video__img {
+    width: 320px !important;
+    height: 200px;
+  }
+ 
+  .channel__center-left {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+  .search {
+    display: none;
+  }
+ }
+
+
+ 
+@media only screen and (max-width:570px) {
+  .single-video__img {
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+ 
+  .channel__heading-wrapper {
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .channel__navbar {
+    width: 55% !important;
+  }
+
+  .channel-video-info__wrapper {
+    flex-direction: column;
+  }
+
+  .dis {
+    display: none;
+  }
+
+  .small-video__img {
+    width: 420px !important;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+ 
+  .channel__center-left {
+    width: 55% !important;
+    margin: 0 auto;
+  }
+
+  .video__heading, .video__paragraph, .video__date-info {
+    text-align: center;
+  }
+
+  .subscribe-button__wrapper {
+    display: none;
+  }
+ }
+
+ 
+ @media only screen and (max-width:420px) {
+  .single-video__img {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+ 
+  .channel__heading-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .channel__navbar {
+    width: 95% !important;
+  }
+
+  .channel__list {
+    width: 95%;
+  }
+
+
+  .dis {
+    display: none;
+  }
+
+  .small-video__img {
+    width: 98% !important;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+ 
+  .channel__center-left {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .video__heading, .video__paragraph, .video__date-info {
+    text-align: center;
+  }
+
+  .subscribe-button__wrapper {
+    display: none;
+  }
+ }
+
+
+ 
+ @media only screen and (max-width:420px) {
+  .single-video__img {
+    width: 95%;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .channel-owner__img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .channel__heading {
+    font-size: 18px;
+  }
+ 
+  .channel__heading-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .channel__navbar {
+    width: 95% !important;
+  }
+
+  .channel__list {
+    width: 95%;
+  }
+
+  .channel__item {
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+
+  .video__heading {
+    font-size: 16px;
+  }
+
+  .video__paragraph {
+    font-size: 12px;
+  }
+
+  .video__date-info {
+    font-size: 14px;
+  }
+
+  .small-video__img {
+    width: 98% !important;
+    height: 180px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+ 
+  .channel__center-left {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .video__heading, .video__paragraph, .video__date-info {
+    text-align: center;
+  }
+
+  .subscribe-button__wrapper {
+    display: none;
+  }
+ }

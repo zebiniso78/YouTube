@@ -1,6 +1,5 @@
 //Files
 import './ChannelOwner.scss';
-import { NavLink } from 'react-router-dom';
 
 //Icons
 import NotifButton from '../Lib/Svg/Navbar_Svg/Notif';
@@ -19,12 +18,14 @@ import ChannelOwnerPhoto3 from '../../Assets/Images/ChannelOwner_Img/ChannelOwne
 function ChannelOwner() {
     return <> 
         <div className="channel-wrapper">
+
             <img
             className="single-video__img" 
             src={SingleVideo} 
             alt="Single Video"
             width='1300'
             height='250'  />
+    
 
             <div className="channel__heading-wrapper">
                 <div className="channel-info-wrapper">
@@ -61,26 +62,26 @@ function ChannelOwner() {
                             <a href="#link" className="channel__link">Playlists</a>
                         </li>
                         <li className="channel__item">
-                            <a href="#link" className="channel__link">Channels</a>
+                            <a href="#link" className="channel__link dis">Channels</a>
                         </li>
                         <li className="channel__item">
-                            <a href="#link" className="channel__link">Discussions</a>
+                            <a href="#link" className="channel__link dis">Discussions</a>
                         </li>
                         <li className="channel__item">
-                            <a href="#link" className="channel__link">About</a>
+                            <a href="#link" className="channel__link search">About</a>
                         </li>
                         <li className="channel__item">
-                            <a href="#link" className="channel__link"> <SearchButton /></a>
+                            <a href="#link" className="channel__link search"> <SearchButton /></a>
                         </li>
                     </ul>
                 </nav>
                 <div className="channel-video-info__wrapper">
-                    <NavLink to='/video'>
+                
                     <img
                     className="small-video__img" 
                     src={SmallVideo} 
                     alt="Small Video"  />
-                    </NavLink>
+            
                     <div className="video-info__wrapper">
                         <h3 className="video__heading">Choosing The Best Audio Player Software For Your Computer</h3>
                         <p className="video__paragraph">Your cheap internet-based banner advertising will become one of the sought for ads there are. Today, the world of Internet advertising is rapidly evolving beyond banner ads and intrusive pop-ups. Bayles A common medium for advertising on the Internet is the use of banner ads. </p>

@@ -9,11 +9,11 @@ import Video from './Pages/Video/Video';
 function AuthenticatedApp() {
     return <>
         <main>
-			
+				
 				<Switch>
 					<Route path='/' component={Home} exact />
 					<Route path='/channel' component={Channel} exact />
-					<Route path='/video' componenet={Video}  />
+					<Route path='/video/:id' component={Video}  />
 				</Switch>
 			</main>
     </>

@@ -53,8 +53,9 @@ function FoodAndDrink() {
       <ul className="food__list">
         {video.length > 0 &&
           video.map((photo) => (
+            <NavLink to="/video/2"> 
             <li className="food__item" key={photo.id}>
-              <NavLink to="/video">
+             
                 <div className="food-item__image-wrapper">
                   <img
                     className="food-item__image"
@@ -70,7 +71,7 @@ function FoodAndDrink() {
                     </p>
                   </div>
                 </div>
-              </NavLink>
+          
               <h3 className="food-item__image-heading">
                 {photo.title.slice(0, 30)}
               </h3>
@@ -81,6 +82,7 @@ function FoodAndDrink() {
                 <span className="food-item__info-span">Dollie Blair</span>
               </div>
             </li>
+            </NavLink>
           ))}
       </ul>
     </>

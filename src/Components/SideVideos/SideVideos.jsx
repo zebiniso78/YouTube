@@ -10,7 +10,7 @@ function SideVideos() {
     fetch("https://jsonplaceholder.typicode.com/photos/")
       .then((response) => response.json())
       .then((data) => {
-        const neededPhotos = data.slice(0, 3);
+        const neededPhotos = data.slice(20, 23);
         setVideo(neededPhotos);
       });
   }, []);
@@ -33,9 +33,9 @@ function SideVideos() {
         <ul className="sidevideos__list">
           {video.length > 0 &&
             video.map((photo) => (
-              <li className="sidevideos__item" key={photo.id}>
-                <div className="sidevideos-item__image-wrapper">
-                  <NavLink to="/video">
+              <NavLink to="/video/2">
+                <li className="sidevideos__item" key={photo.id}>
+                  <div className="sidevideos-item__image-wrapper">
                     <img
                       className="sidevideos-item__image"
                       src={photo.thumbnailUrl}
@@ -43,26 +43,26 @@ function SideVideos() {
                       width="250"
                       height="200"
                     />
-                  </NavLink>
 
-                  <div className="sidevideos-item__image-time-wrapper">
-                    <p className="sidevideos-item__image-time">
-                      {photo.id}:{photo.albumId}0
-                    </p>
+                    <div className="sidevideos-item__image-time-wrapper">
+                      <p className="sidevideos-item__image-time">
+                        {photo.id}:{photo.albumId}0
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <h3 className="sidevideos-item__image-heading">
-                  {photo.title.slice(0, 24)}...
-                </h3>
-                <div className="sidevideos-item__info-wrapper">
-                  <span className="sidevideos-item__info-span">
-                    80k views · 3 days ago
-                  </span>
-                  <span className="sidevideos-item__info-span">
-                    Dollie Blair
-                  </span>
-                </div>
-              </li>
+                  <h3 className="sidevideos-item__image-heading">
+                    {photo.title.slice(0, 24)}...
+                  </h3>
+                  <div className="sidevideos-item__info-wrapper">
+                    <span className="sidevideos-item__info-span">
+                      80k views · 3 days ago
+                    </span>
+                    <span className="sidevideos-item__info-span span">
+                      Dollie Blair
+                    </span>
+                  </div>
+                </li>
+              </NavLink>
             ))}
         </ul>
       </div>
